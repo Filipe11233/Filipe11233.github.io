@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, user-scalable=no">
+      <meta charset="utf-8"/>
+      <title>Filipe Costa Github</title>
+      <!-- nome da página-->
+      <link rel="stylesheet" href="css/styles.css"/>
+      <!-- ir buscar o ficheiro css-->
+   </head>
+   <body>
+      <!-- início do corpo-->
+      <div class="hero2 purple">
+         <div class="content">
+            <font face="Courier New"> <!-- definir o tipo de lera-->
+            <h2>Bem vindos ao meu Github</h2>
+            <!-- titulo-->
+            <h3>
+               <!-- centrar-->
+               <center>
+               Filipe Costa <!-- subtitulo-->
+            </h3>
+         </div>
+      </div>
+      <section>
+      <div class="page2" id="page2">
+         <h1> <font face="Courier New"> De seguida encontram-se os passos 4 e 5 </font></h1>
+      </div>
+      <div>
+         <a href="https://filipe11233.github.io/Passo-4.a/" target="_blank"><button>Passo 4.a</button></a>
+         <!-- definir uma hiperligacao que leva para o respetivo passo-->
+         <!-- definir tipo de letra-->
+         <a href="https://filipe11233.github.io/Passo-4.b/" target="_blank"><button>Passo 4.b</button></a>
+         <a href="https://filipe11233.github.io/Passo-4.c/" target="_blank"><button>Passo 4.c</button></a>
+         <a href="https://filipe11233.github.io/Passo-4.d/" target="_blank"><button>Passo 4.d</button></a>
+         <a href="https://filipe11233.github.io/Passo-4.e/" target="_blank"><button>Passo 4.e</button></a>
+      </div>
+      <div>
+         <a href="https://filipe11233.github.io/Tabela/" target="_blank">
+            <center>
+            <button>Passo 5.tabela </button>
+         </a>
+      </div>
+      <style>
+         button:hover {
+         background-color: #A9A9A9	;
+         transition: 1s;
+         }
+      </style>
+   </body>
+   <!-- Fim do corpo-->
+   <script> 
+      <!-- início do script da animação-->
+         function typeWriter(elemento) {
+         const textoArray = elemento.innerHTML.split('');		<!-- script da animação-->
+         elemento.innerHTML = ''; 
+         textoArray.forEach((letra, i) => {
+          setTimeout(() => elemento.innerHTML += letra, 75 * i);
+         });
+         }
+         
+         const titulo = document.querySelector('h2');
+         typeWriter(titulo);
+         
+         
+   </script> 
+   <!-- início do script da animação-->
+</html>
